@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <div class="input_screen">
+        <input type="text" id="screen" placeholder="0" />
+      </div>
+      <div class="clear">
+        <button class="ac color_orange" onclick="clearAll()">AC</button>
+        <button class="del color_orange" onclick="back()">DEL</button>
+      </div>
+      <div class="one">
+        <button class="color_orange" onclick="input('7')">7</button>
+        <button class="color_orange" onclick="input('8')">8</button>
+        <button class="color_orange" onclick="input('9')">9</button>
+        <button class="color_orange" onclick="input('*')">x</button>
+      </div>
+      <div class="two">
+        <button class="color_dark" onclick="input('4')">4</button>
+        <button class="color_dark" onclick="input('5')">5</button>
+        <button class="color_dark" onclick="input('6')">6</button>
+        <button class="color_orange" onclick="input('-')">-</button>
+      </div>
+      <div class="three">
+        <button class="color_dark" onclick="input('1')">1</button>
+        <button class="color_dark" onclick="input('2')">2</button>
+        <button class="color_dark" onclick="input('3')">3</button>
+        <button class="color_orange" onclick="input('+')">+</button>
+      </div>
+      <div class="four">
+        <button class="color_dark" onclick="input('0')">0</button>
+        <button class="color_dark" onclick="input('.')">.</button>
+        <button class="color_dark" onclick="input('%')">%</button>
+        <button class="color_orange equals" onclick="answer()">=</button>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
